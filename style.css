@@ -1,0 +1,217 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  padding: 0px 50px;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 100px;
+  line-height: 12px;
+  background-color: black;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-links ul li ::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: orange;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li :hover::after {
+  width: 100%;
+}
+
+.nav-links ul li a:hover {
+  color: rgb(252, 7, 7);
+}
+
+#section1 {
+  width: 100%;
+  height: 500px;
+  display: inline-block;
+  background-image: linear-gradient(
+      rgba(15, 16, 17, 0.3),
+      rgba(17, 17, 19, 0.952)
+    ),
+    url("https://i.postimg.cc/ZYxBHv9B/outdoor1.jpg");
+  color: rgb(247, 248, 244);
+  top: 50%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+}
+
+#section1 h1 {
+  font-size: 60px;
+}
+
+#section1 p {
+  margin: 10px 0 30px;
+  font-size: 20px;
+}
+.order-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(207, 25, 25);
+  padding: 12px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.order-btn:hover {
+  color: rgb(252, 7, 7);
+  border: 1px solid orange;
+}
+#section2 {
+  width: 100%;
+  height: 700px;
+  display: inline-block;
+  background-image: linear-gradient(rgba(0, 3, 7, 0.3), rgba(0, 0, 0, 0.952)),
+    url("https://i.postimg.cc/rFt6cxSz/outdoor.jpg");
+  color: rgb(255, 255, 255);
+  top: 50%;
+}
+#section2 h1 {
+  font-size: 60px;
+}
+#section2 p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+}
+.image {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+#section3 {
+  width: 100%;
+  height: 700px;
+  display: inline-block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 3, 0.952)),
+    url("https://i.postimg.cc/pTd7SFWW/food1.jpg");
+  color: rgb(247, 248, 244);
+  top: 50%;
+  text-align: center;
+}
+#section3 h1 {
+  font-size: 60px;
+}
+
+#section3 p {
+  margin: 10px 0 30px;
+  font-size: 20px;
+}
+
+#section4 {
+  width: 100%;
+  height: 700px;
+  display: inline-block;
+  background-image: linear-gradient(
+      rgba(15, 16, 17, 0.3),
+      rgba(17, 17, 19, 0.952)
+    ),
+    url("https://i.postimg.cc/1tfSqTNr/signup.jpg");
+  top: 50%;
+  box-sizing: border-box;
+  color: antiquewhite;
+}
+
+.Signup {
+  padding: 16px;
+  font-size: 25px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 25%;
+  padding: 16px;
+  margin: 5px 0px 22px 16px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+label {
+  width: 25%;
+  border: none;
+  color: antiquewhite;
+  font-size: 20px;
+  padding: 16px;
+}
+.btn {
+  padding: 16px;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.signupbtn {
+  padding: 14px 20px;
+  background-color: #04aa6d;
+}
+
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 12%;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  background: #0760a5;
+  color: white;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background: #b82160;
+  color: white;
+}
